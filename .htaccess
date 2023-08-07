@@ -3,20 +3,20 @@
     Header set Permissions-Policy "interest-cohort=()"
 
     # Кеширование изображений
-    ExpiresByType image/svg+xml "access plus 10 minutes"
-    ExpiresByType image/webp "access plus 10 minutes"
-    ExpiresByType image/jpeg "access plus 10 minutes"
-    ExpiresByType image/png "access plus 10 minutes"
+    ExpiresByType image/svg+xml "access plus 7 days"
+    ExpiresByType image/webp "access plus 7 days"
+    ExpiresByType image/jpeg "access plus 7 days"
+    ExpiresByType image/png "access plus 7 days"
 
     # Кеширование шрифтов
-    ExpiresByType application/font-woff "access plus 10 minutes"
-    ExpiresByType application/font-woff2 "access plus 10 minutes"
-    ExpiresByType application/vnd.ms-fontobject "access plus 10 minutes"
-    ExpiresByType font/ttf "access plus 10 minutes"
+    ExpiresByType application/font-woff "access plus 7 days"
+    ExpiresByType application/font-woff2 "access plus 7 days"
+    ExpiresByType application/vnd.ms-fontobject "access plus 7 days"
+    ExpiresByType font/ttf "access plus 7 days"
 
     # Кеширование стилей и скриптов
-    ExpiresByType text/css "access plus 10 minutes"
-    ExpiresByType application/javascript "access plus 10 minutes"
+    ExpiresByType text/css "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
 
     # Дополнительные настройки для Cache-Control
     <FilesMatch "\.(css|js|woff|woff2)$">
