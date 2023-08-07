@@ -1,0 +1,10 @@
+# Включение модуля Expires
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Настройка кэша для различных типов ресурсов
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
