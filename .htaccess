@@ -5,6 +5,7 @@
     # Настройка кэша для различных типов ресурсов
     ExpiresByType text/css "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType application/javascript "access plus 1 year"
     ExpiresByType application/font-woff "access plus 1 year"
