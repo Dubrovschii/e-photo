@@ -72,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	var observer = new IntersectionObserver(function (entries, observer) {
 		entries.forEach(function (entry) {
-			if (entry.isIntersecting) {
+			if (entry.isIntersecting && !entry.target.classList.contains("lazy-loaded")) {
 				var img = entry.target;
 				img.src = img.getAttribute("data-src");
 				img.removeAttribute("data-src");
+				img.classList.add("lazy-loaded");
 				observer.unobserve(img);
 			}
 		});
@@ -85,22 +86,4 @@ document.addEventListener("DOMContentLoaded", function () {
 		observer.observe(img);
 	});
 });
-// document.addEventListener("DOMContentLoaded", function () {
-// 	var imagesToLazyLoad = document.querySelectorAll("img.lazy-image");
-
-// 	var observer = new IntersectionObserver(function (entries, observer) {
-// 		entries.forEach(function (entry) {
-// 			if (entry.isIntersecting) {
-// 				var img = entry.target;
-// 				img.src = img.getAttribute("data-src");
-// 				img.removeAttribute("data-src");
-// 				observer.unobserve(img);
-// 			}
-// 		});
-// 	});
-
-// 	imagesToLazyLoad.forEach(function (img) {
-// 		observer.observe(img);
-// 	});
-// });
 
