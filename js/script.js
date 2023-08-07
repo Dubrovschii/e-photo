@@ -66,3 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+	var imagesToLazyLoad = document.querySelectorAll("img.lazy-image");
+
+	var observer = new IntersectionObserver(function (entries, observer) {
+		entries.forEach(function (entry) {
+			if (entry.isIntersecting) {
+				var img = entry.target;
+				img.src = img.getAttribute("data-src");
+				img.removeAttribute("data-src");
+				observer.unobserve(img);
+			}
+		});
+	});
+
+	imagesToLazyLoad.forEach(function (img) {
+		observer.observe(img);
+	});
+});
+
