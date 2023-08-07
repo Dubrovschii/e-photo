@@ -55,3 +55,14 @@ async function loadImages() {
 
 loadImages();
 
+
+document.addEventListener("DOMContentLoaded", function () {
+	var images = document.querySelectorAll("#image-container img");
+
+	images.forEach(function (img) {
+		img.setAttribute("width", "100%");
+		img.setAttribute("height", "100%");
+		img.setAttribute("loading", "lazy");
+	});
+});
+
