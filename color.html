@@ -1164,12 +1164,14 @@
     </section>
     <script src="lib/jquery/jquery.2.2.2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intersection-observer/1.0.1/intersection-observer.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="js/script.js"></script>
 
     <script>
+        $("img.lazyload").lazyload();
+
         if ($(window).scrollTop() >= 150) $("#ToTop").fadeIn(800);
         $(window).scroll(function(){
             if ($(window).scrollTop() <= 150) $("#ToTop").fadeOut(800);
