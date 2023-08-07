@@ -7,15 +7,20 @@
 
     <title>photo-jenea#color</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/bg.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="alternate" href="https://example.com" hreflang="x-default" />
+	<link rel="stylesheet" href="css/fonts.css" async>
+    <link rel="stylesheet" href="css/bg.css"  async>
+    <link rel="stylesheet" href="css/style.css"  async>
+
+	<link rel="stylesheet" href="css/fonts.css?v=1.0" / async>
+    <link rel="stylesheet" href="css/bg.css?v=1.0" />
+    <link rel="stylesheet" href="css/style.css?v=1.0" />
 </head>
 <body class="color-body">
     <header class="header">
         <div class="header__wr">
           <a href="index.html" class="logo_link">
-            <img src="img/logo_title.svg" alt="">
+            <img src="img/logo_title.svg" alt="logo" width="100%" height="100%">
           </a>
   
          
@@ -1157,10 +1162,10 @@
                 <img src="icons/arrow-back-circle-outline.svg" alt="">
             </a>
     </section>
-    <script src="lib/jquery/jquery.2.2.2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script async src="lib/jquery/jquery.2.2.2.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
-    <script src="js/script.js"></script>
+    <script async src="js/script.js"></script>
 
     <script>
         if ($(window).scrollTop() >= 150) $("#ToTop").fadeIn(800);
