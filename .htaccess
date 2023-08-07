@@ -1,6 +1,6 @@
 <IfModule mod_expires.c>
     ExpiresActive On
-
+    Header set Permissions-Policy "interest-cohort=()"
     # Настройка кэша для различных типов ресурсов
     ExpiresByType text/css "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
