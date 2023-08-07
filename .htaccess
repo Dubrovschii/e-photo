@@ -32,7 +32,7 @@
     SetOutputFilter DEFLATE
 
     # Типы файлов, подлежащих сжатию
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css image/webp application/javascript application/x-javascript
 
     # Отключение сжатия для устаревших браузеров (не поддерживает Gzip)
     BrowserMatch ^Mozilla/4 gzip-only-text/html
