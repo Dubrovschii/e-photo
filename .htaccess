@@ -39,3 +39,8 @@
     BrowserMatch ^Mozilla/4\.0[678] no-gzip
     BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </IfModule>
+
+<FilesMatch "\.(css|js|jpg|jpeg|png|webp|gif|ico)$">
+    Header set Cache-Control "max-age=31536000, public"
+    Header set Expires "Thu, 31 Dec 2099 23:59:59 GMT"
+</FilesMatch>
