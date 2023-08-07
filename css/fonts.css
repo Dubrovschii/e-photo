@@ -3,6 +3,8 @@
     src: url('../fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: optional;
+
 }
 
 @font-face {
@@ -10,6 +12,8 @@
     src: url('../fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+    font-display: optional;
+
 }
 
 @font-face {
@@ -17,4 +21,5 @@
     src: url('../fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: optional;
 }
