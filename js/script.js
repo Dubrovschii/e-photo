@@ -7,7 +7,6 @@ document.addEventListener('mousemove', e => {
 	})
 })
 //for srcoll-up on color.html !!!!!!
-$("img.lazyload").lazyload();
 
 if ($(window).scrollTop() >= 150) $("#ToTop").fadeIn(800);
 $(window).scroll(function(){
@@ -26,7 +25,7 @@ $("#OnBottom").click(function(){$("html,body").animate({scrollTop:$(document).he
 
 Fancybox.bind("[data-fancybox]", {
 });
-//for srcoll-up on color.html !!!!!!
+//for srcoll-up on color.html and bw.html !!!!!!
 
 const imageCache = {};
 
