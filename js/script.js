@@ -36,54 +36,21 @@ async function getCachedImage(url) {
     }
 }
 
-async function loadImages() {
-    const layer1ImageURL = 'img/bg.webp';
-    const layer5ImageURL = 'img/5.1.webp';
-    const layer6ImageURL = 'img/layer-6.webp';
+// async function loadImages() {
+//     const layer1ImageURL = 'img/bg.webp';
+//     const layer5ImageURL = 'img/5.1.webp';
+//     const layer6ImageURL = 'img/layer-6.webp';
 
-    const layer1Image = await getCachedImage(layer1ImageURL);
-    const layer5Image = await getCachedImage(layer5ImageURL);
-    const layer6Image = await getCachedImage(layer6ImageURL);
+//     const layer1Image = await getCachedImage(layer1ImageURL);
+//     const layer5Image = await getCachedImage(layer5ImageURL);
+//     const layer6Image = await getCachedImage(layer6ImageURL);
 
-    if (layer1Image && layer1Image.src) {
-        const layer1Element = document.querySelector('.layer-1');
-        layer1Element.style.backgroundImage = `url(${layer1Image.src})`;
-    }
+//     if (layer1Image && layer1Image.src) {
+//         const layer1Element = document.querySelector('.layer-1');
+//         // layer1Element.style.backgroundImage = `url(${layer1Image.src})`;
+//     }
 
-    // Подобным образом можно использовать остальные изображения
-}
+//     // Подобным образом можно использовать остальные изображения
+// }
 
-loadImages();
-
-
-document.addEventListener("DOMContentLoaded", function () {
-	var images = document.querySelectorAll("#image-container img");
-
-	images.forEach(function (img) {
-		img.setAttribute("width", "100%");
-		img.setAttribute("height", "100%");
-		img.setAttribute("loading", "lazy");
-	});
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-	var lazyImages = document.querySelectorAll("img.lazy-image");
-
-	var observer = new IntersectionObserver(function (entries, observer) {
-		entries.forEach(function (entry) {
-			if (entry.isIntersecting && !entry.target.classList.contains("lazy-loaded")) {
-				var img = entry.target;
-				img.src = img.getAttribute("data-src");
-				img.removeAttribute("data-src");
-				img.classList.add("lazy-loaded");
-				observer.unobserve(img);
-			}
-		});
-	});
-
-	lazyImages.forEach(function (img) {
-		observer.observe(img);
-	});
-});
-
+// loadImages();
