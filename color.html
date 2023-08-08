@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Author:Dubrovschii A.">
-    
+    <link rel="preconnect" href="https://foo.com/" crossorigin>
     <title>photo-jenea#color</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="alternate" href="https://example.com" hreflang="x-default" />
@@ -1164,32 +1164,9 @@
             </a>
     </section>
     <script src="lib/jquery/jquery.2.2.2.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="js/script.js"></script>
 
-    <script>
-        $("img.lazyload").lazyload();
-
-        if ($(window).scrollTop() >= 150) $("#ToTop").fadeIn(800);
-        $(window).scroll(function(){
-            if ($(window).scrollTop() <= 150) $("#ToTop").fadeOut(800);
-            else $("#ToTop").fadeIn(800);
-        });
-       
-        if ($(window).scrollTop() <= $(document).height()) $("#OnBottom").fadeIn(800);
-        $(window).scroll(function(){
-            if ($(window).scrollTop() >= $(document).height()) $("#OnBottom").fadeOut(800);
-            else $("#OnBottom").fadeIn(800);
-        });
-       
-        $("#ToTop").click(function(){$("html,body").animate({scrollTop:0}, 800)});
-        $("#OnBottom").click(function(){$("html,body").animate({scrollTop:$(document).height()}, 800)});	
-
-        Fancybox.bind("[data-fancybox]", {
-        });
-
-      </script>
 </body>
 </html>
