@@ -55,21 +55,7 @@ async function getCachedImage(url) {
     }
 }
 
-// async function loadImages() {
-//     const layer1ImageURL = 'img/bg.webp';
-//     const layer5ImageURL = 'img/5.1.webp';
-//     const layer6ImageURL = 'img/layer-6.webp';
-
-//     const layer1Image = await getCachedImage(layer1ImageURL);
-//     const layer5Image = await getCachedImage(layer5ImageURL);
-//     const layer6Image = await getCachedImage(layer6ImageURL);
-
-//     if (layer1Image && layer1Image.src) {
-//         const layer1Element = document.querySelector('.layer-1');
-//         // layer1Element.style.backgroundImage = `url(${layer1Image.src})`;
-//     }
-
-//     // Подобным образом можно использовать остальные изображения
-// }
-
-// loadImages();
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css';
+document.head.appendChild(link);
