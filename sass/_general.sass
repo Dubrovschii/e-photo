@@ -268,8 +268,6 @@ h1
     // opacity: .4;
     font-size: 30px;
     margin-bottom: 5px;
-    // width: 30px;
-    // height: 30px;
     transition: .4s;
     img
         position: absolute
@@ -332,7 +330,7 @@ h1
         background-image: linear-gradient(to bottom, rgba(231,230,117,1) , rgba(271,117,117,1), rgba(70,190,158,1) , #41d54eaa );
 
 .colorpage__title
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Rubik_Mono_One', sans-serif;
     font-weight: 700
     font-size: 72px
     color: #fff
@@ -341,7 +339,31 @@ h1
     box-shadow: 0px 0px 100px 0px rgba(230, 228, 56, 100);
     text-align: center
 
-.img-container::before
-    content: ''
-    // background: radial-gradient(#16b924aa, rgba(70,190,158,1));
-    opacity: 0
+
+
+
+.bw__wr .img-container img 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 6px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.5s ease-in-out;
+.bw__wr .img-container img:hover 
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+
+.colorpage__wr .img-container img 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 6px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.5s ease-in-out;
+
+
+.colorpage__wr .img-container img:hover 
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+.header__link
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 6px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 8px
+    padding: 5px 10px
+.header__link:hover
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.4);
+    
