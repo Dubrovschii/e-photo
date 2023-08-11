@@ -23,8 +23,12 @@ $(window).scroll(function(){
 $("#ToTop").click(function(){$("html,body").animate({scrollTop:0}, 800)});
 $("#OnBottom").click(function(){$("html,body").animate({scrollTop:$(document).height()}, 800)});	
 
+
 Fancybox.bind("[data-fancybox]", {
-});
+    Thumbs: {
+      autoStart: true,
+    },
+  });
 //for srcoll-up on color.html and bw.html !!!!!!
 
 const imageCache = {};
